@@ -10,7 +10,7 @@
                 "element": {"#": "owner"}
             },
             "bindings": {
-                "classList.has('completed')": {"<-": "task.completed"}
+                "classList.has('TaskCell--completed')": {"<-": "task.completed"}
             }
         },
         "checkbox": {
@@ -30,7 +30,7 @@
                 "placeholderValue": "Text"
             },
             "bindings": {
-                "value": {"<-": "@owner.task.title"}
+                "value": {"<->": "@owner.task.title"}
             }
         }
     }
